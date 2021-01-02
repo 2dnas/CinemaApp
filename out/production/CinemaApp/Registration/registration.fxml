@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Registration.RegistrationController"
+           style="-fx-background-color: #A9A9A9"
+           alignment="CENTER"
+            prefHeight="400.0" prefWidth="600.0">
+    <VBox fx:id="registrationVBox" alignment="CENTER" spacing="20">
+        <Label text="რეგისტრაცია" style="-fx-font-size: 25px; -fx-text-fill:#000000" />
+
+        <TextField fx:id="registrationUsername" promptText="შეიყვანეთ სახელი" maxWidth="250" />
+
+        <PasswordField fx:id="registrationPassword" promptText="შეიყვანეთ პაროლი" maxWidth="250"/>
+
+        <PasswordField fx:id="repeatPasswordField" promptText="გაიმეორეთ პაროლი" maxWidth="250"/>
+
+        <Button text="რეგისტრაცია" prefHeight="55" prefWidth="280" onAction="#onRegister"
+                style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-font-size: 17px;
+                -fx-font-weight: bold; -fx-background-color: #798a78; -fx-cursor: hand;"/>
+
+
+
+    </VBox>
+
+
+</StackPane>

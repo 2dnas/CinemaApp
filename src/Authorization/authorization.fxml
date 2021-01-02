@@ -1,0 +1,36 @@
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.PasswordField?>
+<StackPane fx:id="authorizationStackPane" fx:controller="Authorization.AuthorizationController"
+           style="-fx-background-color: #A9A9A9"
+           xmlns:fx="http://javafx.com/fxml" alignment="center" >
+    <VBox fx:id="authorizationVBox" alignment="CENTER" spacing="15" >
+
+        <Label text="ავტორიზაცია" style="-fx-font-size: 25px; -fx-text-fill:#000000; -fx-border-color: #808080;"  />
+
+        <TextField fx:id="usernameTextField" promptText="შეიყვანეთ მომხმარებლის სახელი" maxWidth="250" />
+
+        <PasswordField fx:id="passwordField" promptText="შეიყვანეთ პაროლი" maxWidth="250"/>
+
+
+        <Button text="ავტორიზაცია" prefHeight="55" prefWidth="280" onAction="#onAuthorization"
+                style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-font-size: 17px;
+                -fx-font-weight: bold; -fx-background-color: #798a78; -fx-cursor: hand;"/>
+
+        <Button  fx:id="registration" text="რეგისტრაცია" prefHeight="10" prefWidth="200" onAction="#onRegisterPage"
+                style="-fx-background-radius: 10px; -fx-border-radius: 10px; -fx-font-size: 17px;
+                -fx-font-weight: bold; -fx-background-color: #798a78; -fx-cursor: hand;"/>
+
+
+
+
+    </VBox>
+
+</StackPane>
